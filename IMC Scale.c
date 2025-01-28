@@ -33,3 +33,5 @@ int main()
 
     return 0; // Fin du programme  
 }
+
+//Modifier les erreurs de syntaxe
