@@ -39,3 +39,4 @@ fputc(caractere, CIBLE);
     return 0;  
 }
 
+//A debug demain
