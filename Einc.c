@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-//Permet d'utiliser des pointeurs de fichiers 
+//Permet d'utiliser des pointeurs de fichiers
 
-//On choisit la taille de notre fichier à remplir 
-//Idée d'amélioration, on pourra demander une saisie 
+//On choisit la taille de notre fichier à remplir
+//Idée d'amélioration, on pourra demander une saisie
 //Ici le fichier fera 3 Mo
 #define CIBLE (3 * 1024 * 1024)
 
@@ -16,7 +16,7 @@ int main()
 
 //Une fois le fichier crée, on le remplit en binaire jusqu'à atteindre un poids désiré en partant d'un poids numérique nul
 long debut = 0;
-char caracter;
+char remplissage;
 
 //On crée notre boucle de remplissage
 //On choisit d'alterner entre 0 et 1 mais on peut mettre tous les caractères desirés et ce sans les alterner
@@ -26,8 +26,8 @@ remplissage = (debut%2==0)?'0':'1';
 
 //Ecriture dans le fichier test
 // On implémente la variable debut tant qu'elle ne satisfait pas la boucle
-fputc(caractere, CIBLE);
-        debut++;  
+fputc(debut, CIBLE);
+        debut++;
 }
 
 //On éteint le .txt
@@ -36,7 +36,5 @@ fputc(caractere, CIBLE);
 
 //Fin du programme
 //Fin de la fonction
-    return 0;  
+    return 0;
 }
-
-//A debug demain
