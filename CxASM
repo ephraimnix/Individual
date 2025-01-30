@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+//Déclaration de fonction prend en compte deux entiers
+//add stock le resultat de l'operation operée en asm
+int sigma(int a, int b) 
+{
+    int add  ;
+    asm ("addl %1, %0" : "=r" (add) : "r" (b), "0" (a));
+    return add;
+}
+
+//Declaration de fonction principale, de a et b
+//Demande à l'utilisateur une saisie puis l'affiche
+int main() {
+    int a, b;
+    printf("Entrez deux entiers : ");
+    scanf("%d %d", &a, &b);
+    
+    int somme = sigma(a, b);
+    printf("La somme est : %d\n", somme);
+    
+    return 0;
+}
