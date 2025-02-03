@@ -24,3 +24,6 @@ const char* evaluate_password(const char* password)
 
 //Evaluation de la force du mot de passe, on compte 6 niveaux
  if (length < 4) {}
+
+
+// Rappel : A Finir !!
