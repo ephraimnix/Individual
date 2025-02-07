@@ -2,6 +2,10 @@
 #include <stdlib.h>
 //Permet d'utiliser des pointeurs de fichiers
 
+
+/* DEMANDER A L'UTILISATEUR OU CREER LE FICHIER 
+EN INDIQUANT LE REGISTRE DE DESTINATION */
+
 //On choisit la taille de notre fichier à remplir
 //Idée d'amélioration, on pourra demander une saisie
 //Ici le fichier fera 3 Mo
