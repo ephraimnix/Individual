@@ -1,0 +1,3 @@
+Finir le programme sur la demi-vie
+Finir le programme sur le niveau de force des mdp
+Commencer students.py
